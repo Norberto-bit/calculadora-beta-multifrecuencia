@@ -288,8 +288,7 @@ else:
             f" período a lo largo de los $N = {factor_anual}$ períodos anuales:"
         )
         st.latex(
-            r"E(R) = (1 + \bar{R}_{periodo})^{N} - 1 \quad \text{donde } N ="
-            f" {factor_anual}"
+            rf"E(R) = (1 + \bar{{R}}_{{periodo}})^{{N}} - 1 \quad \text{{donde }} N = {factor_anual}"
         )
 
         st.markdown("---")
@@ -299,8 +298,7 @@ else:
             f" por el factor anual $N = {factor_anual}$:"
         )
         st.latex(
-            r"\sigma^2_{anual} = \sigma^2_{periodo} \times N \quad \text{donde"
-            f" } N = {factor_anual}"
+            rf"\sigma^2_{{anual}} = \sigma^2_{{periodo}} \times N \quad \text{{donde }} N = {factor_anual}"
         )
 
         st.markdown("---")
@@ -310,8 +308,7 @@ else:
             f" desvío del período por la raíz cuadrada de $N = {factor_anual}$:"
         )
         st.latex(
-            r"\sigma_{anual} = \sigma_{periodo} \times \sqrt{N} \quad"
-            f" \text{{donde }} N = {factor_anual}"
+            rf"\sigma_{{anual}} = \sigma_{{periodo}} \times \sqrt{{N}} \quad \text{{donde }} N = {factor_anual}"
         )
 
         st.markdown("---")
