@@ -322,7 +322,7 @@ else:
             " retornos del mercado en la frecuencia seleccionada:"
         )
         st.latex(r"\beta = \frac{Cov(R_a, R_m)}{Var(R_m)}")
-
+          
       with tab5:
         st.subheader("💰 Determinación del Costo de Capital (Modelo CAPM)")
         st.markdown(
