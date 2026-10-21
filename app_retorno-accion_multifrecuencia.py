@@ -93,7 +93,7 @@ datos_crudos, error = cargar_datos_frecuencia(
 
 if error or datos_crudos is None or datos_crudos.empty:
   st.error(
-      f"Ocurrió un error al obtener los datos. Verifica los símbolos"
+      f"Ocurrió an error al obtener los datos. Verifica los símbolos"
       f" ingresados ({ticker_accion}, {ticker_mercado}). Detalle: {error}"
   )
 else:
@@ -288,7 +288,8 @@ else:
             f" período a lo largo de los $N = {factor_anual}$ períodos anuales:"
         )
         st.latex(
-            rf"E(R) = (1 + \bar{{R}}_{{periodo}})^{{N}} - 1 \quad \text{{donde }} N = {factor_anual}"
+            r"E(R) = (1 + \bar{R}_{periodo})^{N} - 1 \quad \text{donde } N = "
+            + str(factor_anual)
         )
 
         st.markdown("---")
@@ -298,7 +299,8 @@ else:
             f" por el factor anual $N = {factor_anual}$:"
         )
         st.latex(
-            rf"\sigma^2_{{anual}} = \sigma^2_{{periodo}} \times N \quad \text{{donde }} N = {factor_anual}"
+            r"\sigma^2_{anual} = \sigma^2_{periodo} \times N \quad \text{donde }"
+            r" N = " + str(factor_anual)
         )
 
         st.markdown("---")
@@ -308,7 +310,8 @@ else:
             f" desvío del período por la raíz cuadrada de $N = {factor_anual}$:"
         )
         st.latex(
-            rf"\sigma_{{anual}} = \sigma_{{periodo}} \times \sqrt{{N}} \quad \text{{donde }} N = {factor_anual}"
+            r"\sigma_{anual} = \sigma_{periodo} \times \sqrt{N} \quad"
+            r" \text{donde } N = " + str(factor_anual)
         )
 
         st.markdown("---")
