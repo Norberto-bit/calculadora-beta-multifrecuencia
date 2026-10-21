@@ -93,7 +93,7 @@ datos_crudos, error = cargar_datos_frecuencia(
 
 if error or datos_crudos is None or datos_crudos.empty:
   st.error(
-      f"Ocurrió an error al obtener los datos. Verifica los símbolos"
+      f"Ocurrió un error al obtener los datos. Verifica los símbolos"
       f" ingresados ({ticker_accion}, {ticker_mercado}). Detalle: {error}"
   )
 else:
