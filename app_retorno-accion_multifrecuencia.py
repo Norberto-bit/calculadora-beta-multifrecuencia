@@ -293,7 +293,7 @@ else:
         )
 
         st.markdown("---")
-        st.markdown("### 2. Varianza Anualizada ($\sigma^2$)")
+        st.markdown(f"### 2. Varianza Anualizada ($\sigma^2$)")
         st.markdown(
             "La varianza anual se obtiene escalando la varianza del período"
             f" por el factor anual $N = {factor_anual}$:"
@@ -304,7 +304,7 @@ else:
         )
 
         st.markdown("---")
-        st.markdown("### 3. Desvío Estándar Anualizado ($\sigma$)")
+        st.markdown(f"### 3. Desvío Estándar Anualizado ($\sigma$)")
         st.markdown(
             "Representa la volatilidad anualizada, obtenida multiplicando el"
             f" desvío del período por la raíz cuadrada de $N = {factor_anual}$:"
@@ -322,7 +322,7 @@ else:
             " retornos del mercado en la frecuencia seleccionada:"
         )
         st.latex(r"\beta = \frac{Cov(R_a, R_m)}{Var(R_m)}")
-          
+
       with tab5:
         st.subheader("💰 Determinación del Costo de Capital (Modelo CAPM)")
         st.markdown(
